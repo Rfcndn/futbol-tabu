@@ -96,6 +96,8 @@ io.on('connection', (socket) => {
   socket.on('update-settings', ({ settings }) => {
     const room = gm.findRoomByPlayer(socket.id);
     if (!room || socket.id !== room.hostId) return;
+    if (settings.gameMode) room.settings.gameMode = settings.gameMode;
+    if (settings.roundCount) room.settings.roundCount = parseInt(settings.roundCount);
     if (settings.roundTime) room.settings.roundTime = parseInt(settings.roundTime);
     if (settings.targetScore) room.settings.targetScore = parseInt(settings.targetScore);
     io.to(room.code).emit('room-updated', room.getState());
@@ -362,12 +364,6 @@ function handleMidRoundTransition(room, reason) {
     room.describeRemainingTime -= penalty;
   }
 
-  // Check for win condition
-  if (room.teamA.score >= room.settings.targetScore || room.teamB.score >= room.settings.targetScore) {
-    endRound(room, reason);
-    return;
-  }
-
   if (room.describeRemainingTime <= 0) {
     room.describeRemainingTime = 0;
     endRound(room, 'timeout');
@@ -443,19 +439,45 @@ function handleMidRoundTransition(room, reason) {
 function endRound(room, result) {
   room.phase = 'round_end';
 
+  if (room.currentTeam === 'A') {
+    room.turnsPlayedA++;
+  } else {
+    room.turnsPlayedB++;
+  }
+
   const describingTeam = room.getDescribingTeam();
   const opposingTeam = room.getOpposingTeam();
-  const targetScore = room.settings.targetScore;
 
   let gameOver = false;
   let winner = null;
 
-  if (room.teamA.score >= targetScore) {
-    gameOver = true;
-    winner = room.teamA.name;
-  } else if (room.teamB.score >= targetScore) {
-    gameOver = true;
-    winner = room.teamB.name;
+  // Sadece tur sayıları eşitse bitirme kontrolü yap
+  if (room.turnsPlayedA === room.turnsPlayedB) {
+    if (room.settings.gameMode === 'score') {
+      const targetScore = room.settings.targetScore;
+      if (room.teamA.score >= targetScore || room.teamB.score >= targetScore) {
+        if (room.teamA.score > room.teamB.score) {
+          gameOver = true;
+          winner = room.teamA.name;
+        } else if (room.teamB.score > room.teamA.score) {
+          gameOver = true;
+          winner = room.teamB.name;
+        }
+        // Beraberlik durumu: uzatma (oyun normal şekilde round_end olur ve yeni tur başlar)
+      }
+    } else if (room.settings.gameMode === 'rounds') {
+      const targetRounds = room.settings.roundCount;
+      if (room.turnsPlayedA >= targetRounds) {
+        if (room.teamA.score > room.teamB.score) {
+          gameOver = true;
+          winner = room.teamA.name;
+        } else if (room.teamB.score > room.teamA.score) {
+          gameOver = true;
+          winner = room.teamB.name;
+        }
+        // Beraberlik durumu: uzatma
+      }
+    }
   }
 
   if (gameOver) {

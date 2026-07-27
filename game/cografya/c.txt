@@ -1,0 +1,895 @@
+Afganistan
+Almanya
+Amerika Birleşik Devletleri
+Andorra
+Angola
+Antigua ve Barbuda
+Arjantin
+Arnavutluk
+Avustralya
+Avusturya
+Azerbaycan
+Bahamalar
+Bahreyn
+Bangladeş
+Barbados
+Belarus
+Belçika
+Belize
+Benin
+Bhutan
+Birleşik Arap Emirlikleri
+Birleşik Krallık
+Bolivya
+Bosna-Hersek
+Botsvana
+Brezilya
+Brunei
+Bulgaristan
+Burkina Faso
+Burundi
+Cabo Verde
+Cezayir
+Cibuti
+Çad
+Çekya
+Çin
+Danimarka
+Dominika
+Dominik Cumhuriyeti
+Doğu Timor
+Ekvador
+Ekvator Ginesi
+El Salvador
+Endonezya
+Eritre
+Ermenistan
+Estonya
+Esvatini
+Etiyopya
+Fas
+Fiji
+Fildişi Sahili
+Filipinler
+Filistin
+Finlandiya
+Fransa
+Gabon
+Gambiya
+Gana
+Gine
+Gine-Bissau
+Grenada
+Guatemala
+Guyana
+Güney Afrika
+Güney Kore
+Güney Sudan
+Gürcistan
+Haiti
+Hırvatistan
+Hindistan
+Hollanda
+Honduras
+Irak
+İran
+İrlanda
+İspanya
+İsrail
+İsveç
+İsviçre
+İtalya
+İzlanda
+Jamaika
+Japonya
+Kamboçya
+Kamerun
+Kanada
+Karadağ
+Katar
+Kazakistan
+Kenya
+Kırgızistan
+Kiribati
+Kolombiya
+Komorlar
+Kongo Cumhuriyeti
+Kongo Demokratik Cumhuriyeti
+Kosova
+Kosta Rika
+Kuveyt
+Kuzey Kore
+Kuzey Makedonya
+Küba
+Laos
+Lesotho
+Letonya
+Liberya
+Libya
+Lihtenştayn
+Litvanya
+Lübnan
+Lüksemburg
+Macaristan
+Madagaskar
+Malavi
+Maldivler
+Malezya
+Mali
+Malta
+Marshall Adaları
+Mauritius
+Meksika
+Mısır
+Mikronezya
+Moğolistan
+Moldova
+Monako
+Moritanya
+Mozambik
+Myanmar
+Namibya
+Nauru
+Nepal
+Nijer
+Nijerya
+Nikaragua
+Norveç
+Orta Afrika Cumhuriyeti
+Özbekistan
+Pakistan
+Palau
+Panama
+Papua Yeni Gine
+Paraguay
+Peru
+Polonya
+Portekiz
+Romanya
+Ruanda
+Rusya
+Saint Kitts ve Nevis
+Saint Lucia
+Saint Vincent ve Grenadinler
+Samoa
+San Marino
+Sao Tome ve Principe
+Senegal
+Seyşeller
+Sırbistan
+Sierra Leone
+Singapur
+Slovakya
+Slovenya
+Solomon Adaları
+Somali
+Sri Lanka
+Sudan
+Surinam
+Suriye
+Suudi Arabistan
+Şili
+Tacikistan
+Tanzanya
+Tayland
+Tayvan
+Togo
+Tonga
+Trinidad ve Tobago
+Tunus
+Tuvalu
+Türkiye
+Türkmenistan
+Uganda
+Ukrayna
+Umman
+Uruguay
+Ürdün
+Vanuatu
+Vatikan
+Venezuela
+Vietnam
+Yemen
+Yeni Zelanda
+Yunanistan
+Zambiya
+Zimbabve
+Kabil
+Berlin
+Washington, DC
+Andorra la Vella
+Luanda
+Saint John's
+Buenos Aires
+Tiran
+Canberra
+Viyana
+Bakü
+Nassau
+Manama
+Dakka
+Bridgetown
+Minsk
+Brüksel
+Belmopan
+Porto-Novo
+Thimphu
+Abu Dabi
+Londra
+Sucre
+Saraybosna
+Gaborone
+Brasília
+Bandar Seri Begavan
+Sofya
+Ouagadougou
+Gitega
+Praia
+Cezayir
+Cibuti
+Encemine
+Prag
+Pekin
+Kopenhag
+Roseau
+Santo Domingo
+Dili
+Quito
+Malabo
+San Salvador
+Cakarta
+Asmara
+Erivan
+Tallinn
+Mbabane
+Addis Ababa
+Rabat
+Suva
+Yamoussoukro
+Manila
+Kudüs
+Helsinki
+Paris
+Libreville
+Banjul
+Akra
+Konakri
+Bissau
+Saint George's
+Guatemala
+Georgetown
+Pretoria
+Seul
+Juba
+Tiflis
+Port-au-Prince
+Zagreb
+Yeni Delhi
+Amsterdam
+Tegucigalpa
+Bağdat
+Tahran
+Dublin
+Madrid
+Kudüs
+Stockholm
+Bern
+Roma
+Reykjavik
+Kingston
+Tokyo
+Phnom Penh
+Yaounde
+Ottawa
+Podgorica
+Doha
+Astana
+Nairobi
+Bişkek
+Tarawa
+Bogotá
+Moroni
+Brazzaville
+Kinşasa
+Priştine
+San José
+Kuveyt
+Pyongyang
+Üsküp
+Havana
+Vientiane
+Maseru
+Riga
+Monrovia
+Trablus
+Vaduz
+Vilnius
+Beyrut
+Lüksemburg
+Budapeşte
+Antananarivo
+Lilongwe
+Male
+Kuala Lumpur
+Bamako
+Valletta
+Majuro
+Port Louis
+Meksiko
+Kahire
+Palikir
+Ulan Batur
+Kişinev
+Monako
+Nuakşot
+Maputo
+Nepido
+Windhoek
+Yaren
+Katmandu
+Niamey
+Abuja
+Managua
+Oslo
+Bangui
+Taşkent
+İslamabad
+Ngerulmud
+Panama
+Port Moresby
+Asunción
+Lima
+Varşova
+Lizbon
+Bükreş
+Kigali
+Moskova
+Basseterre
+Castries
+Kingstown
+Apia
+San Marino
+São Tomé
+Dakar
+Victoria
+Belgrad
+Freetown
+Singapur
+Bratislava
+Ljubljana
+Honiara
+Mogadişu
+Sri Jayawardenepura Kotte
+Hartum
+Paramaribo
+Şam
+Riyad
+Santiago
+Duşanbe
+Dodoma
+Bangkok
+Taipei
+Lomé
+Nuku'alofa
+Port of Spain
+Tunus
+Funafuti
+Ankara
+Aşkabat
+Kampala
+Kiev
+Maskat
+Montevideo
+Amman
+Port Vila
+Vatikan
+Caracas
+Hanoi
+Sana
+Wellington
+Atina
+Lusaka
+Harare
+Adana
+Adıyaman
+Afyonkarahisar
+Ağrı
+Aksaray
+Amasya
+Antalya
+Artvin
+Aydın
+Balıkesir
+Bartın
+Batman
+Bayburt
+Bilecik
+Bingöl
+Bitlis
+Bolu
+Burdur
+Bursa
+Çanakkale
+Çankırı
+Çorum
+Denizli
+Diyarbakır
+Düzce
+Edirne
+Elazığ
+Erzincan
+Erzurum
+Eskişehir
+Gaziantep
+Giresun
+Gümüşhane
+Hakkâri
+Hatay
+Iğdır
+Isparta
+İstanbul
+İzmir
+Kahramanmaraş
+Karabük
+Karaman
+Kars
+Kastamonu
+Kayseri
+Kilis
+Kırıkkale
+Kırklareli
+Kırşehir
+Kocaeli
+Konya
+Kütahya
+Malatya
+Manisa
+Mardin
+Mersin
+Muğla
+Muş
+Nevşehir
+Niğde
+Ordu
+Osmaniye
+Rize
+Sakarya
+Samsun
+Siirt
+Sinop
+Sivas
+Şanlıurfa
+Şırnak
+Tekirdağ
+Tokat
+Trabzon
+Tunceli
+Uşak
+Van
+Yalova
+Yozgat
+Zonguldak
+Büyük Okyanus (Pasifik Okyanusu)
+Atlas Okyanusu (Atlantik Okyanusu)
+Hint Okyanusu
+Kuzey Buz Denizi (Arktik Okyanusu)
+Güney Okyanusu (Antarktika Okyanusu)
+Akdeniz
+Karadeniz
+Ege Denizi
+Marmara Denizi
+Kızıldeniz
+Baltık Denizi
+Kuzey Denizi
+Bering Denizi
+Ohotsk Denizi
+Japon Denizi
+Sarı Deniz
+Doğu Çin Denizi
+Güney Çin Denizi
+Filipin Denizi
+Mercan Denizi
+Arap Denizi
+Umman Denizi
+Andaman Denizi
+Karayip Denizi
+Sargasso Denizi
+Bering Denizi
+Çukçi Denizi
+Beaufort Denizi
+Grönland Denizi
+Norveç Denizi
+Barents Denizi
+Beyaz Deniz
+Labrador Denizi
+İrlanda Denizi
+Kelt Denizi
+Manş Denizi
+Adriyatik Denizi
+İyon Denizi
+Tiren Denizi
+Liguryan Denizi
+Balear Denizi
+Levanten Denizi
+Ege Denizi
+Marmara Denizi
+Azak Denizi
+Hazar Denizi
+Ölü Deniz
+Galile Denizi
+Aral Denizi
+Timor Denizi
+Arafura Denizi
+Tasman Denizi
+Bismarck Denizi
+Solomon Denizi
+Java Denizi
+Banda Denizi
+Flores Denizi
+Celebes Denizi
+Sulu Denizi
+Filipin Denizi
+Laptew Denizi
+Doğu Sibirya Denizi
+Ross Denizi
+Weddell Denizi
+Amundsen Denizi
+Bellingshausen Denizi
+Davis Denizi
+Amazon Nehri
+Nil Nehri
+Fırat Nehri
+Dicle Nehri
+Yangtze Nehri
+Ganj Nehri
+İndus Nehri
+Mississippi Nehri
+Missouri Nehri
+Kongo Nehri
+Nijer Nehri
+Mekong Nehri
+Tuna Nehri
+Ren Nehri
+Volga Nehri
+Ural Nehri
+Sarı Irmak
+Ob Nehri
+Yenisey Nehri
+Lena Nehri
+Murray Nehri
+Paraná Nehri
+Orinoco Nehri
+Zambezi Nehri
+Amur Nehri
+Everest Dağı
+K2 Dağı
+Kilimanjaro Dağı
+Ağrı Dağı
+Elbruz Dağı
+Mont Blanc
+Alpler
+Himalayalar
+And Dağları
+Kayalık Dağları
+Atlas Dağları
+Ural Dağları
+Toros Dağları
+Kafkas Dağları
+Appalaş Dağları
+Drakensberg Dağları
+Tibet Platosu
+Pamir Dağları
+Altay Dağları
+Karakurum Dağları
+Fuji Dağı
+Vezüv Yanardağı
+Etna Yanardağı
+Mauna Loa
+Krakatoa Yanardağı
+Büyük Kanyon
+Kutup Buzulları
+Antarktika Buz Tabakası
+Grönland Buz Tabakası
+Sahra Çölü
+Gobi Çölü
+Arabistan Çölü
+Kalahari Çölü
+Atacama Çölü
+Patagonya Çölü
+Sonoran Çölü
+Taklamakan Çölü
+Amazon Ormanları
+Kongo Yağmur Ormanları
+Borneo Yağmur Ormanları
+Pantanal Sulak Alanı
+Okavango Deltası
+Nil Deltası
+Ganj Deltası
+Tuna Deltası
+Hazar Gölü
+Baykal Gölü
+Victoria Gölü
+Tanganika Gölü
+Superior Gölü
+Michigan Gölü
+Titicaca Gölü
+Aral Gölü
+Van Gölü
+Tuz Gölü
+Bermuda Şeytan Üçgeni
+Mariana Çukuru
+Büyük Set Resifi
+Galapagos Adaları
+Hawaii Adaları
+Maldivler
+Kanarya Adaları
+Madagaskar Adası
+Büyük Britanya Adası
+Grönland Adası
+Borneo Adası
+Sicilya Adası
+İstanbul Boğazı
+Çanakkale Boğazı
+Panama Kanalı
+Süveyş Kanalı
+Bering Boğazı
+Cebelitarık Boğazı
+Hürmüz Boğazı
+Babülmendep Boğazı
+New York
+Londra
+Paris
+Tokyo
+Roma
+Moskova
+Dubai
+Pekin
+Rio de Janeiro
+Kahire
+Barselona
+Sidney
+Seul
+Singapur
+Venedik
+Prag
+Amsterdam
+Berlin
+Atina
+Sumatra Adası
+Java Adası
+Honshu Adası
+Küba Adası
+Jamaika Adası
+Girit Adası
+Korsika Adası
+Bali Adası
+Bora Bora Adası
+Seyşeller Adaları
+Mauritius Adası
+Niagara Şelalesi
+Victoria Şelalesi
+İguazu Şelalesi
+Angel Şelalesi
+Kaieteur Şelalesi
+Tugela Şelalesi
+Ölüm Vadisi
+Büyük Rift Vadisi
+Loire Vadisi
+Keşmir Vadisi
+Dolina Vadisi
+Son Doong Mağarası
+Mammoth Mağarası
+Altamira Mağarası
+Postojna Mağarası
+Carlsbad Mağaraları
+Anadolu Yarımadası
+Arap Yarımadası
+İber Yarımadası
+Balkan Yarımadası
+İtalya Yarımadası
+Hindistan Yarımadası
+İskandinav Yarımadası
+Kamçatka Yarımadası
+Malakka Boğazı
+Dover Boğazı
+Pinatubo Yanardağı
+St. Helens Yanardağı
+Tambora Yanardağı
+Kilauea Yanardağı
+Kapadokya
+Pamukkale Travertenleri
+Nemrut Dağı
+Erciyes Dağı
+Uludağ
+Kaçkar Dağları
+Salda Gölü
+Kızılırmak Nehri
+Sakarya Nehri
+Fırtına Deresi
+Düden Şelalesi
+Ölüdeniz
+Lopez Adaları
+Falkland Adaları
+Azor Adaları
+Faroe Adaları
+Hawaii Büyük Adası
+Tasman Adası
+Tibet Platosu
+Moğol Platosu
+Dekkan Platosu
+Patagonya Platosu
+Anadolu Platosu
+Karayip Adaları
+Polinezya
+Melanezya
+Mikronezya
+Namib Çölü
+Mojave Çölü
+Büyük Victoria Çölü
+Büyük Kum Çölü
+Orinoco Havzası
+Kongo Havzası
+Mekong Havzası
+Nil Havzası
+Afar Çöküntüsü
+Danakil Çöküntüsü
+Sunda Çukuru
+Tonga Çukuru
+Peru-Şili Çukuru
+Kıta
+Takımada
+Akarsu
+Çay
+Dere
+Lagün
+Krater Gölü
+Baraj Gölü
+Bataklık
+Sulak Alan
+Ova
+Yayla
+Sıradağ
+Lav
+Magma
+Fay Hattı
+Deprem Kuşağı
+Levha Tektoniği
+Tektonik Levha
+Kıvrım Dağı
+Kırık Dağ
+Buzul Çağı
+Fiyort
+Atol
+Obruk
+Dolin
+Karstik Arazi
+Kireçtaşı
+Tundra
+Savan
+Step
+Bozkır
+Yağmur Ormanı
+Muson Ormanı
+Mangrov Ormanı
+Biyom
+Ekosistem
+İklim
+Hava Durumu
+Atmosfer
+Troposfer
+Stratosfer
+Ozon Tabakası
+Ekvator
+Dönence
+Yengeç Dönencesi
+Oğlak Dönencesi
+Kutup Dairesi
+Meridyen
+Paralel
+Enlem
+Boylam
+Rakım
+Yükselti
+Eğim
+Sıfır Meridyeni
+Yerel Saat
+Saat Dilimi
+Gelgit
+Medcezir
+Okyanus Akıntısı
+Sıcak Su Akıntısı
+Soğuk Su Akıntısı
+Erozyon
+Aşındırma
+Biriktirme
+Sediment
+Toprak Erozyonu
+Çığ
+Heyelan
+Yeraltı Suyu
+Akifer
+Marmara Bölgesi
+Ege Bölgesi
+Akdeniz Bölgesi
+İç Anadolu Bölgesi
+Karadeniz Bölgesi
+Doğu Anadolu Bölgesi
+Güneydoğu Anadolu Bölgesi
+Çatalhöyük
+Göbeklitepe
+Ani Harabeleri
+Sümela Manastırı
+Efes Antik Kenti
+Truva Antik Kenti
+Aspendos
+Nemrut Krater Gölü
+Beydağları
+Sultan Dağları
+Ilgaz Dağları
+Bolkar Dağları
+Aladağlar
+Munzur Dağları
+Yıldız Dağları
+Küre Dağları
+Madra Dağları
+Kaz Dağları
+Büyük Menderes Nehri
+Küçük Menderes Nehri
+Gediz Nehri
+Meriç Nehri
+Çoruh Nehri
+Yeşilırmak Nehri
+Seyhan Nehri
+Ceyhan Nehri
+Aras Nehri
+Murat Nehri
+Karasu Nehri
+Göksu Nehri
+Beyşehir Gölü
+Eğirdir Gölü
+İznik Gölü
+Sapanca Gölü
+Manyas Gölü
+Uluabat Gölü
+Çıldır Gölü
+Hazar Gölü
+Bafa Gölü
+Acıgöl
+Akşehir Gölü
+İshak Paşa Sarayı
+Yedigöller
+Abant Gölü
+Gökova Körfezi
+Fethiye Körfezi
+İskenderun Körfezi
+Edremit Körfezi
+İzmit Körfezi
+Antalya Körfezi
+Mersin Körfezi
+Cappadocia Vadileri
+Ihlara Vadisi
+Munzur Vadisi
+Köprülü Kanyon
+Saklıkent Kanyonu
+Ulubey Kanyonu
+Karain Mağarası
+Damlataş Mağarası
+İnsuyu Mağarası
+Alacaatlı Mağarası
+Oylat Mağarası
+Akyatan Lagünü
+Büyük Menderes Deltası
+Gediz Deltası
+Kızılırmak Deltası
+Göksu Deltası
+Çukurova
+Konya Ovası
+Harran Ovası
+Bafra Ovası
+Ergene Ovası
+Gediz Ovası
+Amik Ovası
+Iğdır Ovası
+Bolu Dağı
+Zigana Geçidi
+Cankurtaran Geçidi

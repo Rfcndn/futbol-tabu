@@ -340,6 +340,14 @@ function initLobbyEvents() {
   });
 
   // Settings changes
+  document.getElementById('setting-game-mode').addEventListener('change', (e) => {
+    socket.emit('update-settings', { settings: { gameMode: e.target.value } });
+  });
+
+  document.getElementById('setting-round-count').addEventListener('change', (e) => {
+    socket.emit('update-settings', { settings: { roundCount: e.target.value } });
+  });
+
   document.getElementById('setting-round-time').addEventListener('change', (e) => {
     socket.emit('update-settings', { settings: { roundTime: e.target.value } });
   });
@@ -618,6 +626,8 @@ function renderLobby(state) {
   // Only host can edit team names and settings
   teamANameInput.readOnly = !isHost;
   teamBNameInput.readOnly = !isHost;
+  document.getElementById('setting-game-mode').disabled = !isHost;
+  document.getElementById('setting-round-count').disabled = !isHost;
   document.getElementById('setting-round-time').disabled = !isHost;
   document.getElementById('setting-target-score').disabled = !isHost;
 
@@ -625,8 +635,19 @@ function renderLobby(state) {
   if (isHost) {
     document.getElementById('settings-card').style.display = 'block';
   }
+  const gameMode = state.settings.gameMode || 'score';
+  document.getElementById('setting-game-mode').value = gameMode;
   document.getElementById('setting-round-time').value = state.settings.roundTime;
   document.getElementById('setting-target-score').value = state.settings.targetScore;
+  document.getElementById('setting-round-count').value = state.settings.roundCount || 5;
+
+  if (gameMode === 'score') {
+    document.getElementById('setting-target-score-wrapper').style.display = 'block';
+    document.getElementById('setting-round-count-wrapper').style.display = 'none';
+  } else {
+    document.getElementById('setting-target-score-wrapper').style.display = 'none';
+    document.getElementById('setting-round-count-wrapper').style.display = 'block';
+  }
 
   // Start button (host only, enough players)
   const hasPlayers = state.teamA.players.length >= 2 && state.teamB.players.length >= 2;

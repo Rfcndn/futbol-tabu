@@ -9,6 +9,8 @@ const wordLists = {
   movies_filmler: require('./filmler.json'),
   movies_diziler: require('./diziler.json'),
   movies_karakterler: require('./karakterler.json'),
+  history: require('./tarih.json'),
+  geography: require('./cografya.json')
 };
 wordLists.gaming_karisik = [
   ...wordLists.gaming_supercell,

@@ -309,6 +309,13 @@
         <h3>⚙️ Ayarlar</h3>
         <div class="settings-grid">
           <div class="setting-item">
+            <label for="setting-game-mode">Oyun Modu</label>
+            <select id="setting-game-mode">
+              <option value="score" selected>Hedef Puan</option>
+              <option value="rounds">Tur Sayısı</option>
+            </select>
+          </div>
+          <div class="setting-item">
             <label for="setting-round-time">Anlatma Süresi</label>
             <select id="setting-round-time">
               <option value="30">30 sn</option>
@@ -317,13 +324,22 @@
               <option value="120">120 sn</option>
             </select>
           </div>
-          <div class="setting-item">
+          <div class="setting-item" id="setting-target-score-wrapper">
             <label for="setting-target-score">Hedef Skor</label>
             <select id="setting-target-score">
               <option value="5">5 puan</option>
               <option value="10" selected>10 puan</option>
               <option value="15">15 puan</option>
               <option value="20">20 puan</option>
+            </select>
+          </div>
+          <div class="setting-item" id="setting-round-count-wrapper" style="display: none;">
+            <label for="setting-round-count">Oynanacak Tur</label>
+            <select id="setting-round-count">
+              <option value="3">3 Tur</option>
+              <option value="5" selected>5 Tur</option>
+              <option value="7">7 Tur</option>
+              <option value="10">10 Tur</option>
             </select>
           </div>
         </div>
@@ -358,6 +374,6 @@
   </section>
 
   <script src="/socket.io/socket.io.js"></script>
-  <script src="/js/app.js?v=8"></script>
+  <script src="/js/app.js?v=10"></script>
 </body>
 </html>

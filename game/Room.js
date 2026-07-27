@@ -15,7 +15,11 @@ class Room {
     this.timer = null;
     this.describeRemainingTime = 0;
     this.describeStartTime = 0;
+    this.turnsPlayedA = 0;
+    this.turnsPlayedB = 0;
     this.settings = {
+      gameMode: 'score', // 'score' or 'rounds'
+      roundCount: 5,
       roundTime: 60,
       tabooPickTime: 20,
       targetScore: 10
@@ -158,6 +162,8 @@ class Room {
     this.currentTeam = 'A';
     this.describerIndexA = 0;
     this.describerIndexB = 0;
+    this.turnsPlayedA = 0;
+    this.turnsPlayedB = 0;
     this.phase = 'lobby';
     this.describeRemainingTime = 0;
     this.describeStartTime = 0;
