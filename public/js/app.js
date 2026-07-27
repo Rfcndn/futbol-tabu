@@ -111,6 +111,26 @@ function initCreatePageEvents() {
     btnLobbyBack.addEventListener('click', () => window.location.href = '/');
   }
 
+  const gamingCatGrid = document.getElementById('gaming-cat-grid');
+  const moviesCatGrid = document.getElementById('movies-cat-grid');
+  const mainCatGrid = document.getElementById('lobby-cat-grid');
+  
+  const btnGamingBack = document.getElementById('btn-gaming-back');
+  if (btnGamingBack) {
+    btnGamingBack.addEventListener('click', () => {
+      gamingCatGrid.style.display = 'none';
+      mainCatGrid.style.display = 'grid';
+    });
+  }
+
+  const btnMoviesBack = document.getElementById('btn-movies-back');
+  if (btnMoviesBack) {
+    btnMoviesBack.addEventListener('click', () => {
+      moviesCatGrid.style.display = 'none';
+      mainCatGrid.style.display = 'grid';
+    });
+  }
+
   // Category selection in Lobby
   catCards.forEach(card => {
     card.addEventListener('click', () => {
@@ -124,6 +144,42 @@ function initCreatePageEvents() {
         return;
       }
       
+      if (cat === 'gaming') {
+        mainCatGrid.style.display = 'none';
+        moviesCatGrid.style.display = 'none';
+        gamingCatGrid.style.display = 'grid';
+        return;
+      }
+      
+      if (cat === 'movies') {
+        mainCatGrid.style.display = 'none';
+        gamingCatGrid.style.display = 'none';
+        moviesCatGrid.style.display = 'grid';
+        return;
+      }
+      
+      selectedCategory = cat;
+      socket.emit('update-category', { category: selectedCategory });
+    });
+  });
+
+  // Handle nested gaming categories as well
+  const gamingCards = document.querySelectorAll('#gaming-cat-grid .cat-card:not(#btn-gaming-back)');
+  gamingCards.forEach(card => {
+    card.addEventListener('click', () => {
+      if (myId !== roomState.hostId) return;
+      const cat = card.dataset.category;
+      selectedCategory = cat;
+      socket.emit('update-category', { category: selectedCategory });
+    });
+  });
+
+  // Handle nested movies categories as well
+  const moviesCards = document.querySelectorAll('#movies-cat-grid .cat-card:not(#btn-movies-back)');
+  moviesCards.forEach(card => {
+    card.addEventListener('click', () => {
+      if (myId !== roomState.hostId) return;
+      const cat = card.dataset.category;
       selectedCategory = cat;
       socket.emit('update-category', { category: selectedCategory });
     });
@@ -451,6 +507,20 @@ function initSocketEvents() {
   socket.on('reconnect', () => {
     showToast('Yeniden bağlanıldı! ✓', 'success');
   });
+
+  socket.on('taboo-word-sync-receive', ({ index, word, senderId }) => {
+    const input = document.getElementById(`taboo-word-${index}`);
+    if (input) {
+      input.value = word;
+      
+      // Highlight briefly to show it changed remotely
+      input.style.transition = 'background-color 0.2s';
+      input.style.backgroundColor = 'rgba(16, 185, 129, 0.2)'; // Var green
+      setTimeout(() => {
+        input.style.backgroundColor = '';
+      }, 500);
+    }
+  });
 }
 
 // ═══════════════ RENDER: LOBBY ═══════════════
@@ -460,21 +530,46 @@ function renderLobby(state) {
   
   // Category UI sync
   const catGrid = document.getElementById('lobby-cat-grid');
-  const catCards = catGrid.querySelectorAll('.cat-card');
+  const gamingGrid = document.getElementById('gaming-cat-grid');
+  const moviesGrid = document.getElementById('movies-cat-grid');
+  const allCatCards = document.querySelectorAll('.cat-card');
   const hostBadge = document.getElementById('category-host-badge');
   
   if (isHost) {
     catGrid.style.pointerEvents = 'auto';
     catGrid.style.opacity = '1';
+    gamingGrid.style.pointerEvents = 'auto';
+    moviesGrid.style.pointerEvents = 'auto';
     hostBadge.style.display = 'none';
   } else {
     catGrid.style.pointerEvents = 'none';
     catGrid.style.opacity = '0.6';
+    gamingGrid.style.pointerEvents = 'none';
+    moviesGrid.style.pointerEvents = 'none';
     hostBadge.style.display = 'inline-block';
   }
 
-  catCards.forEach(card => {
-    if (card.dataset.category === state.category) {
+  // Show correct grid based on category
+  if (state.category && state.category.startsWith('gaming_')) {
+    catGrid.style.display = 'none';
+    moviesGrid.style.display = 'none';
+    gamingGrid.style.display = 'grid';
+  } else if (state.category && state.category.startsWith('movies_')) {
+    catGrid.style.display = 'none';
+    gamingGrid.style.display = 'none';
+    moviesGrid.style.display = 'grid';
+  } else {
+    gamingGrid.style.display = 'none';
+    moviesGrid.style.display = 'none';
+    catGrid.style.display = 'grid';
+  }
+
+  allCatCards.forEach(card => {
+    if (
+      card.dataset.category === state.category || 
+      (card.dataset.category === 'gaming' && state.category && state.category.startsWith('gaming_')) ||
+      (card.dataset.category === 'movies' && state.category && state.category.startsWith('movies_'))
+    ) {
       card.classList.add('selected');
     } else {
       card.classList.remove('selected');
@@ -689,8 +784,12 @@ function renderTabooPick(data) {
       if (firstInput) firstInput.focus();
     }, 300);
 
-    // Enter key to move between inputs
+    // Sync inputs in real-time
     document.querySelectorAll('.taboo-input').forEach((input, idx) => {
+      input.addEventListener('input', () => {
+        socket.emit('taboo-word-sync', { index: idx + 1, word: input.value });
+      });
+
       input.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
           e.preventDefault();

@@ -116,6 +116,23 @@ io.on('connection', (socket) => {
     startNewRound(room);
   });
 
+  socket.on('taboo-word-sync', ({ index, word }) => {
+    const room = gm.findRoomByPlayer(socket.id);
+    if (!room || room.phase !== 'picking_taboo') return;
+    const player = room.players.get(socket.id);
+    if (!player) return;
+    const opposingTeamId = room.getOpposingTeamId();
+    if (player.team !== opposingTeamId) return;
+
+    // Sadece karşı takımdaki (aynı takımda olan) diğer oyunculara gönder
+    const opposingTeam = room.getOpposingTeam();
+    opposingTeam.players.forEach(p => {
+      if (p.id !== socket.id) {
+        io.to(p.id).emit('taboo-word-sync-receive', { index, word, senderId: socket.id });
+      }
+    });
+  });
+
   socket.on('submit-taboo-words', ({ words }) => {
     const room = gm.findRoomByPlayer(socket.id);
     if (!room || room.phase !== 'picking_taboo') return;

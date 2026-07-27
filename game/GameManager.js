@@ -1,5 +1,26 @@
 const Room = require('./Room');
-const footballers = require('./players.json');
+
+const wordLists = {
+  football: require('./players.json'),
+  gaming_supercell: require('./supercell.json'),
+  gaming_minecraft: require('./minecraft.json'),
+  gaming_nintendo: require('./nintendo.json'),
+  gaming_yetkinbaba: require('./yetkinbaba.json'),
+  movies_filmler: require('./filmler.json'),
+  movies_diziler: require('./diziler.json'),
+  movies_karakterler: require('./karakterler.json'),
+};
+wordLists.gaming_karisik = [
+  ...wordLists.gaming_supercell,
+  ...wordLists.gaming_minecraft,
+  ...wordLists.gaming_nintendo,
+  ...wordLists.gaming_yetkinbaba
+];
+wordLists.movies_karisik = [
+  ...wordLists.movies_filmler,
+  ...wordLists.movies_diziler,
+  ...wordLists.movies_karakterler
+];
 
 class GameManager {
   constructor() {
@@ -67,6 +88,13 @@ class GameManager {
     return null;
   }
 
+  getWordList(room) {
+    if (wordLists[room.category] && wordLists[room.category].length > 0) {
+      return wordLists[room.category];
+    }
+    return wordLists.football;
+  }
+
   getRandomFootballer(room) {
     // Custom mode: pick from custom cards
     if (room.category === 'custom' && room.customCards && room.customCards.length > 0) {
@@ -83,12 +111,13 @@ class GameManager {
       return c.main;
     }
 
-    // Default: use footballers list
-    const available = footballers.filter(f => !room.usedFootballers.has(f));
+    // Default: use appropriate word list
+    const listToUse = this.getWordList(room);
+    const available = listToUse.filter(f => !room.usedFootballers.has(f));
     if (available.length === 0) {
       // All used, reset
       room.usedFootballers.clear();
-      const f = footballers[Math.floor(Math.random() * footballers.length)];
+      const f = listToUse[Math.floor(Math.random() * listToUse.length)];
       room.usedFootballers.add(f);
       return f;
     }
@@ -101,14 +130,16 @@ class GameManager {
     if (room.category === 'custom' && room.customCards) {
       return room.customCards.length - room.usedFootballers.size;
     }
-    return footballers.length - room.usedFootballers.size;
+    const listToUse = this.getWordList(room);
+    return listToUse.length - room.usedFootballers.size;
   }
 
   getTotalFootballerCount(room) {
     if (room && room.category === 'custom' && room.customCards) {
       return room.customCards.length;
     }
-    return footballers.length;
+    const listToUse = this.getWordList(room);
+    return listToUse.length;
   }
 
   // Get pre-set forbidden words for custom cards
